@@ -1,15 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* background: #FFF; */
-  /* width: 100%; */
-  /* height: 100%; */
   margin: 20px 20px;
 `;
 
-// export const Header = styled.header`
-//   margin-top: 12px;
-// `;
 
 export const TopViewsContainer = styled.div`
   margin-top: 24px;
@@ -25,9 +19,7 @@ export const TextContainer = styled.section`
 `;
 
 export const CarouselContainer = styled.section`
-  display: flex;
-  flex-direction: row;
-
+  margin-top: 2em;
 `;
 
 export const TopCategoriesContainer = styled.section`
@@ -66,11 +58,8 @@ export const ListTopCategories = styled.div`
 
   & button {
     margin-left: 24px;
-    /* padding-left: 16px; */
-    /* padding-right: 16px; */
     margin-bottom: 8px;
     min-width: 90px;
-    /* width: 60px; */
     height: 60px;
     background: ${({ theme }) => theme.colors.backgroundDark};
 
@@ -87,7 +76,6 @@ export const ListTopCategories = styled.div`
 
     & span {
       color: ${({ theme }) => theme.colors.font};
-      /* margin-top: 8px; */
       font-size: 0.6rem;
       margin: 0 auto;
     }
@@ -137,8 +125,6 @@ export const AnimeContainer = styled.div`
   }
 `;
 
-// export const ImageContainer = styled.div
-
 export const Infos = styled.div`
   padding: 0 12px;
   margin-bottom: 24px;
@@ -150,14 +136,14 @@ export const AnimeTitle = styled.h3`
 export const AnimeDescription = styled.p`
   font-size: 16px;
   opacity: 0.25;
-  /* margin-bottom: 24px; */
 `;
 
 export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 12px;
+  width: 100%;
+  height: 52px;
 `;
 
 

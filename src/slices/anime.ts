@@ -1,6 +1,6 @@
-import { createEntityAdapter, createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createAsyncThunk, createEntityAdapter, createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { QueryClient } from 'react-query';
 import { RootState } from 'store';
-
 export interface Saga {
   'titles': {
     'en': string;
@@ -62,11 +62,6 @@ export interface AnimeState {
   animesByCategory: Anime[];
   selectedCategory: string;
 };
-
-interface AddAnimesByCategorie {
-  category: string;
-  animes: Anime[];
-}
 
 const AnimeAdapter = createEntityAdapter();
 

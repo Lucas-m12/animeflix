@@ -1,0 +1,1 @@
+export const twelveHoursInMiliseconds = ((1000 * 60) * 60) * 12;

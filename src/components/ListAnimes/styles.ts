@@ -5,23 +5,28 @@ interface AnimeImageProps {
 }
 
 export const Container = styled.section`
+  /* margin: 0 auto; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
   
-  @media(max-width: 1520px) {
+  @media(max-width: 1890px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  };
+
+  @media(max-width: 1580px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   };
 
-  @media(max-width: 1220px) {
+  @media(max-width: 1280px) {
     grid-template-columns: 1fr 1fr 1fr;
   };
 
-  @media(max-width: 920px) {
+  @media(max-width: 980px) {
     grid-template-columns: 1fr 1fr;
   };
 
-  @media(max-width: 620px) {
+  @media(max-width: 680px) {
     display: flex;
     align-items: center;
     /* justify-content: space-evenly; */
@@ -36,11 +41,11 @@ export const Container = styled.section`
 
 export const CardContainer = styled.div`
   width: 273px;
-  height: 321px;
+  height: 392px;
 
   background: ${({ theme }) => theme.colors.backgroundDark};
-  /* box-shadow: inset -4px -3px 4px rgba(62, 0, 0, 0.25), inset 4px 4px 10px #1B090A; */
-  /* border-radius: 18px 18px 0px 0px; */
+  box-shadow: inset -4px -3px 4px rgba(62, 0, 0, 0.25), inset 4px 4px 10px #1B090A;
+  border-radius: 18px 18px 0px 0px;
 
   .content {
     width: 100%;
@@ -48,8 +53,8 @@ export const CardContainer = styled.div`
     height: calc(100% - 150px);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    justify-content: space-between;
+    /* align-items: flex-start; */
+    justify-content: space-around;
     /* align-items: flex-start; */
   }
 `;

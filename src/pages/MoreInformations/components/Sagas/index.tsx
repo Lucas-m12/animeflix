@@ -28,7 +28,7 @@ const Sagas = ({ saga }: Props) => {
 					}}
 				>
 					<p>
-						{Parser(saga.descriptions.en)}
+						{Parser(saga.descriptions.en || saga.descriptions.jp)}
 					</p>
 				</Collapse>
 			</List>

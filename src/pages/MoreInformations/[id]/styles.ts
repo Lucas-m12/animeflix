@@ -6,14 +6,14 @@ interface BackgroundContainerProps {
 
 export const Container = styled.div`
   margin: 24px;
-  height: 100vh;
-  /* overflow-y: scroll; */
+  /* height: 100vh; */
+  margin-bottom: 24px;
 `;
 
 export const BackgroundContainer = styled.div<BackgroundContainerProps>`
   width: 100%;
   margin-top: 12px;
-  height: 28vh;
+  height: 68vh;
   padding: 24px;
   background-image: url(${({ urlImage }) => urlImage});
   background-repeat: no-repeat;
@@ -25,10 +25,23 @@ export const BackgroundContainer = styled.div<BackgroundContainerProps>`
   top: 20;
   box-shadow: inset -4px -3px 4px ${({ theme }) => theme.colors.background}, inset 10px 10px 10px ${({ theme }) => theme.colors.background};
   border-radius: 18px 18px 0px 0px;
+
+  @media (max-width: 1460px) {
+    height: 58vh;
+    margin-bottom: calc(62% - 58vh);
+  }
+  @media (max-width: 1000px) {
+    height: 38vh;
+    margin-bottom: calc(60% - 38vh);
+  }
+  @media (max-width: 690px) {
+    height: 28vh;
+    margin-bottom: calc(80% - 28vh);
+  }
 `;
 
 export const Main = styled.main`
-  margin-top: calc(80% - 28vh);
+  /* margin-top: calc(80% - 28vh); */
   & h1 {
     margin-bottom: 8px;
   }

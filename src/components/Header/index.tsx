@@ -1,8 +1,7 @@
-import { NextComponentType } from 'next';
-
 import { Container, FirstButtonContainer, LogoContainer } from './styles';
 
 import ArrowIcon from 'assets/icons/arrow.svg';
+import Logo from 'assets/images/logo.png';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
@@ -38,7 +37,10 @@ const Header = ({
 			}
 
 			<LogoContainer>
-        ANIMEFLIX
+				<Image
+					src={Logo}
+					alt="logo"
+				/>
 			</LogoContainer>
 		</Container>
 	);

@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 		background: ${({ theme }) => theme.colors.background};
 		font-size: 16px;
 		color: ${({ theme }) => theme.colors.font};
-		/* overflow: hidden; */
+		/* overflow-y: scroll; */
 	}
 
 	button {

@@ -14,14 +14,10 @@ interface Props {
 
 const MoreInformation = (props: Props) => {
 	const dispatch = useDispatch();
-	const { query: { id }, ...route} = useRouter();
+	const { query: { id }} = useRouter();
 	const anime = useSelector((state: RootState) => getAnimeById(
  		state, parseInt(id as string))
 	);
-	
-	useEffect(() => {
-		console.log(anime);
-	});
 
 	return (
 		<Container>
@@ -31,11 +27,11 @@ const MoreInformation = (props: Props) => {
 			/>
 
 			<Main>
-				<h1>One Piece</h1>
+				<h1>{anime?.titles.en}</h1>
 				<Infos>
-					<span className='active'>99% Relevante</span>
-					<span>1999</span>
-					<span>10 temporadas</span>
+					<span className='active'>{anime?.score}% Relevante</span>
+					<span>{anime?.season_year}</span>
+					<span>{anime?.episodes_count} Episódios</span>
 				</Infos>
 				<Description>
 					<p>
@@ -47,8 +43,8 @@ const MoreInformation = (props: Props) => {
 
 					<ul>
 						{
-							anime?.sagas.map(saga => (
-								<Sagas saga={saga} key={saga.episode_from} />
+							anime?.sagas?.map(saga => (
+								<Sagas saga={saga} key={saga.titles.jp} />
 							))
 						}
 					</ul>
