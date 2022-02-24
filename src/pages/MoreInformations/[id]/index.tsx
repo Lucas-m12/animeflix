@@ -39,7 +39,11 @@ const MoreInformation = (props: Props) => {
 					</p>
 				</Description>
 				<ListSaga>
-					<h3>Sagas</h3>
+					{
+						anime?.sagas?.length && (
+							<h3>Sagas</h3>
+						)
+					}
 
 					<ul>
 						{

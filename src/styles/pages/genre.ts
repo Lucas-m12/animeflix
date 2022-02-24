@@ -12,7 +12,7 @@ export const Main = styled.main`
   height: 80%;
   display: flex;
   flex-direction: column;
-  @media(max-height: 900px ) {
+  @media(max-height: 900px) and (max-width: 450px) {
     justify-content: center;
   };
 `;

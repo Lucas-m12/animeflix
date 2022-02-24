@@ -26,14 +26,14 @@ export const BackgroundContainer = styled.div<BackgroundContainerProps>`
   box-shadow: inset -4px -3px 4px ${({ theme }) => theme.colors.background}, inset 10px 10px 10px ${({ theme }) => theme.colors.background};
   border-radius: 18px 18px 0px 0px;
 
-  @media (max-width: 1460px) {
+  /* @media (max-width: 1460px) {
     height: 58vh;
     margin-bottom: calc(62% - 58vh);
   }
   @media (max-width: 1000px) {
     height: 38vh;
     margin-bottom: calc(60% - 38vh);
-  }
+  } */
   @media (max-width: 690px) {
     height: 28vh;
     margin-bottom: calc(80% - 28vh);
