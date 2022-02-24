@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { NextPage } from 'next';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Container, Content, Main, PageTitle } from './styles';
+import { Container, Content, Main, PageTitle } from 'styles/pages/genre';
 import { addAnimes, addSelectedCategory, getAnimesByCategory, getSelectedCategory } from 'slices/anime';
 import Header from 'components/Header';
 import StarsIcon from 'assets/icons/stars.svg';

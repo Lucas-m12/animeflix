@@ -2,7 +2,7 @@ import { AnimeDescription, AnimeImage, CardContainer, Container, Infos } from '.
 
 import { addAnimes, Anime, getAnimes, getAnimesByCategory } from 'slices/anime';
 import { Button } from 'components/Button';
-import { ButtonContainer } from 'pages/styles';
+import { ButtonContainer } from 'styles/pages';
 import { useRouter } from 'next/router';
 import { useDispatch, useSelector } from 'react-redux';
 import useFetchAnimes, { AnimeResponse } from 'hooks/useFetchAnimes';

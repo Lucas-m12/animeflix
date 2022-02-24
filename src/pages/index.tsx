@@ -12,7 +12,7 @@ import {
 	ListTopCategories,
 	TextContainer,
 	TopCategoriesContainer,
-} from './styles';
+} from 'styles/pages';
 import { Api } from 'services/api';
 import { dehydrate, QueryClient, useQuery } from 'react-query';
 import { addAnimes, addSelectedCategory, Anime, getAnimes } from 'slices/anime';

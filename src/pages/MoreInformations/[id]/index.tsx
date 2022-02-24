@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import Parser from 'html-react-parser';
 import { getAnimeById, selectAnimeById } from 'slices/anime';
 import { RootState } from 'store';
-import { BackgroundContainer, Container, Description, Infos, ListSaga, Main } from './styles';
-import Sagas from '../components/Sagas';
+import { BackgroundContainer, Container, Description, Infos, ListSaga, Main } from 'styles/pages/moreInformations';
+import Sagas from 'components/Sagas';
 
 interface Props {
 
